@@ -1,6 +1,8 @@
 // Components
 export { Button } from './core/Button';
 export { ButtonProps } from './core/Button/types';
+export { Text } from './core/Text';
+export { TextProps } from './core/Text/types';
 
 // Theme
 export { ITheme, IPalette } from './theme/types';

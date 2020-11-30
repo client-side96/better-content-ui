@@ -13,11 +13,8 @@ const lightTheme: ITheme = {
     warning: colors.candleLight,
     error: colors.outrageousOrange,
     fade: (hex: string, opacity: number): string => {
-      const normalizedHex = hex.substring(1);
-      const red = parseInt(normalizedHex.substring(0, 2), 16);
-      const green = parseInt(normalizedHex.substring(2, 4), 16);
-      const blue = parseInt(normalizedHex.substring(4, 6), 16);
-      return `rgba(${red}, ${green}, ${blue}, ${opacity})`;
+      const rgb = colors.convertHexToRGB(hex);
+      return `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${opacity})`;
     },
   },
   numbers: {
