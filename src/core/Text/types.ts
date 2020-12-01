@@ -9,4 +9,5 @@ export type TextProps = {
     | 'body1'
     | 'body2'
     | 'caption';
+  style?: React.CSSProperties;
 };
