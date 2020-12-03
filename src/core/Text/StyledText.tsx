@@ -3,6 +3,7 @@ import { TextProps } from './types';
 
 const StyledText = styled.p<TextProps>`
   color: ${({ theme }) => theme.palette.text};
+  margin: 0;
   ${({ variant }) =>
     variant === 'h1' &&
     `

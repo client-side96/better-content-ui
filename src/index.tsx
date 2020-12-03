@@ -7,12 +7,13 @@ export { Text } from './core/Text';
 export { TextProps } from './core/Text/types';
 export { TextField } from './core/TextField';
 export { TextFieldProps } from './core/TextField/types';
+export { Box } from './core/Box';
+export { BoxProps } from './core/Box/types';
 
 // Theme
 export { ITheme, IPalette } from './theme/types';
 export * as betterColors from './helpers/colors';
 export { default as theme } from './theme';
-export { default as GlobalStyle } from './theme/globalStyles';
 
 // Custom Hooks
 export { default as useTextFieldDebounce } from './hooks/useTextFieldDebounce';
