@@ -20,3 +20,48 @@ npm install better-content
 ```
 
 Run `npm install` in your source project.
+
+## Theme installation
+
+Create a `globalStyles.ts` file in your theme folder and import a custom font.
+
+```typescript
+// globalStyles.ts
+import { createGlobalStyle } from 'better-content-ui';
+import rubik400Ttf from './fonts/Rubik400.ttf';
+
+const GlobalStyle: any = createGlobalStyle`
+    @font-face {
+        font-family: Rubik;
+        src: url(${rubik400Ttf});
+    }
+
+    body {
+        font-family: Rubik, sans-serif;
+    }
+`;
+
+export default GlobalStyle;
+```
+
+Add the `ThemeProvider` and `GlobalStyles` component to your app root.
+
+```jsx
+import { ThemeProvider, theme } from 'better-content-ui';
+import GlobalStyles from '../../globalStyles';
+
+const App = () => (
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      /** ... */
+    </ThemeProvider>
+  </Provider>
+);
+
+export default App;
+```
+
+## Custom theming
+
+Custom theming will be supported soon...
