@@ -1,6 +1,9 @@
+import { IColor } from '../../theme/types';
+
 export type ButtonProps = {
   label: string;
-  color?: 'primary' | 'info' | 'warning' | 'success' | 'error';
+  color?: IColor;
   variant?: 'outlined' | 'filled';
   onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
+  style?: React.CSSProperties;
 };

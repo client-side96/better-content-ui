@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { checkContrast } from '../../helpers/colors';
 import { ButtonProps } from './types';
 
 const StyledButton = styled.a<ButtonProps>`
@@ -34,13 +35,24 @@ const StyledButton = styled.a<ButtonProps>`
     background-size: 100%;
     transition: background 0s;
   }
+
+  ${
+    !checkContrast(theme.palette.textLight, theme.palette[color]) &&
+    console.warn(
+      'The button has not the recommended color ratio. The text will be probably not readable.'
+    )
+  };
   `}
 
   ${({ variant, theme, color }) =>
     color &&
     variant === 'filled' &&
     `
-  color: ${theme.palette.textLight}};
+  color: ${
+    checkContrast(theme.palette.textLight, theme.palette[color])
+      ? theme.palette.textLight
+      : theme.palette.text
+  };
   background:  ${theme.palette[color]}};
 
   &:hover {

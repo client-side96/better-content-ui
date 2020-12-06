@@ -1,3 +1,5 @@
+export type IColor = 'primary' | 'info' | 'warning' | 'success' | 'error';
+
 export interface IPalette {
   primary: string;
   text: string;
