@@ -6,6 +6,7 @@ export const TextFieldLabel = styled.p<{ focused: boolean }>`
   transition: 0.2s all ease-in-out;
   user-select: none;
   pointer-events: none;
+  box-sizing: border-box;
   ${({ focused, theme }) =>
     focused &&
     `

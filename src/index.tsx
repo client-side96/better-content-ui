@@ -9,6 +9,8 @@ export { TextField } from './core/TextField';
 export { TextFieldProps } from './core/TextField/types';
 export { Box } from './core/Box';
 export { BoxProps } from './core/Box/types';
+export { Badge } from './core/Badge';
+export { BadgeProps } from './core/Badge/types';
 
 // Theme
 export { ITheme, IPalette } from './theme/types';

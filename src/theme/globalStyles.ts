@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
         src: url(${rubik400Ttf});
     }
 
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         font-family: Rubik, sans-serif;
     }
