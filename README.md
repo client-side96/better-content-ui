@@ -7,7 +7,7 @@ A simple user interface library that is based on Google Material Design Principl
 Install the `better-content-ui` library:
 
 ```bash
-npm install better-content
+npm install better-content-ui
 ```
 
 ## Local development
@@ -15,7 +15,7 @@ npm install better-content
 ```json
 // package.json
 ...
-"better-content": "../path-to-folder"
+"better-content-ui": "../path-to-folder"
 
 ```
 
