@@ -1,5 +1,7 @@
 # Better Content UI
 
+![better-content-ui](https://github.com/client-side96/better-content-ui/workflows/better-content-ui/badge.svg)
+
 A simple user interface library that is based on Google Material Design Principles and with the goal to visualize contents of a web application in the best way possible.
 
 ## Installation
