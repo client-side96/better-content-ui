@@ -1,4 +1,4 @@
-export type TextProps = {
+export type TextProps = React.HTMLAttributes<HTMLParagraphElement> & {
   variant:
     | 'h1'
     | 'h2'
@@ -9,5 +9,4 @@ export type TextProps = {
     | 'body1'
     | 'body2'
     | 'caption';
-  style?: React.CSSProperties;
 };

@@ -1,4 +1,4 @@
-export type BoxProps = {
+export type BoxProps = React.HTMLAttributes<HTMLDivElement> & {
   width?: number;
   height?: number;
   flex?: boolean;
@@ -16,5 +16,4 @@ export type BoxProps = {
   pl?: number;
   pt?: number;
   pb?: number;
-  style?: React.CSSProperties;
 };
