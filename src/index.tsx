@@ -11,6 +11,8 @@ export { Box } from './core/Box';
 export { BoxProps } from './core/Box/types';
 export { Badge } from './core/Badge';
 export { BadgeProps } from './core/Badge/types';
+export { Checkbox } from './core/Checkbox';
+export { CheckboxProps } from './core/Checkbox/types';
 
 // Theme
 export { ITheme, IPalette } from './theme/types';
