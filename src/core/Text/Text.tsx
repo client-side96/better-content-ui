@@ -2,9 +2,9 @@ import React from 'react';
 import StyledText from './StyledText';
 import { TextProps } from './types';
 
-const Text: React.FC<TextProps> = ({ variant, children, style }) => {
+const Text: React.FC<TextProps> = ({ variant, children, style, ...rest }) => {
   return (
-    <StyledText variant={variant} style={style}>
+    <StyledText {...rest} variant={variant} style={style}>
       {children}
     </StyledText>
   );
